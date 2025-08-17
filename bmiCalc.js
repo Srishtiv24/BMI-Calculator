@@ -76,7 +76,7 @@ function conclude(BMI)
   }
   else if(BMI<29.9)
   {
-    return "You are<br><span style='color: rgba(255, 255, 0, 0.83)'><b>Overweight!</span></b>";
+    return "You are<br><span style='color: goldenrod'><b>Overweight!</span></b>";
   }
   else
   {
@@ -127,6 +127,7 @@ result2.appendChild(conclusion);
 
 
 }
+
 
 
 
