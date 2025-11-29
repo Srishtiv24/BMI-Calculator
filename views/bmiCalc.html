@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator</title>
+</head>
+<link href="css/bmiCalc.css" rel="stylesheet">
+<body>
+
+  <h2>BMI Calculator</h2>
+  <!--tabs-->
+  <div class="container">
+    <div class="tab">
+      <button class="tablinks btn" onclick="openTab(event,'std')">Standard</button>
+      <!--open tab function is defined in js-->
+      <button class="tablinks btn" onclick="openTab(event,'metr')" id="defaultOpen">Metric</button>
+    </div>
+
+    <!--tab content1-->
+    <div id="std" class="tabContent">
+      <form>
+        <br>
+        <div id="input-row">
+          <label>Height:</label>
+          <input id="heightStd1" type="number" placeholder="feet" required>
+          <input id="heightStd2" type="number" placeholder="inches" required>
+        </div>
+        <br>
+        <label for="weightStd">Weight:</label>
+        <input id="weightStd" type="number" placeholder="pounds" required>
+        <br>
+        <br>
+        <label for="ageStd">Age:</label>
+        <input id="ageStd" type="number" required>
+        <br>
+        <br>
+        <div class="radio-group">
+          <span>Gender:</span>        
+          <label class="radio-option">
+            <input type="radio" name="genderStd" value="male" required>
+            Male
+          </label>
+          
+          <label class="radio-option">
+            <input type="radio" name="genderStd" value="female" required>
+            Female
+          </label>
+        </div>
+
+        <!--calc btns-->
+        <br>
+        <br>
+        <div class="end">
+          <button class="endbtn" type="Submit" onclick="calculateStd(event)">Calculate</button>
+          <button class="endbtn" type="button" onclick="clearData(event)">Reset</button>
+        </div>
+      </form>
+      <p id="resultStd"></p>
+
+      <!--end data-->
+      <br>
+      <br>
+      <div id="bars">
+        <div class="blue-bar" style="background-color:#1d8eff"></div>
+        <div class="green-bar" style="background-color:rgba(0, 128, 0, 0.8)"></div>
+        <div class="yellow-bar" style="background-color:goldenrod"></div>
+        <div class="red-bar" style="background-color:rgba(255, 0, 0, 0.842)"></div>
+      </div>
+
+      <div id="texts">
+        <div class="endtexts">
+          <h5>Underweight</h5>
+          <h6>Below 18.5</h6>
+        </div>
+        <div class="endtexts">
+          <h5>Healthy</h5>
+          <h6>18.5 -24.9</h6>
+        </div>
+        <div class="endtexts">
+          <h5>Overweight</h5>
+          <h6>25 - 29.9</h6>
+        </div>
+        <div class="endtexts">
+          <h5>Obese</h5>
+          <h6> 30 and Above</h6>
+        </div>
+      </div>
+
+    </div>
+    <!--end of tab-content1-->
+
+    <div id="metr" class="tabContent">
+      <form>
+        <br>
+        <div id="input-row">
+          <label for="heightMetr">Height:</label>
+          <input id="heightMetr" type="number" placeholder="cm" required>
+        </div>
+        <br>
+        <label for="weightMetr">Weight:</label>
+        <input id="weightMetr" type="number" placeholder="kg" required>
+        <br>
+        <br>
+        <label for="ageMetr">Age:</label>
+        <input id="ageMetr" type="number" required>
+        <br>
+        <br>
+        <div class="radio-group">
+          <span>Gender:</span>
+          <label class="radio-option">
+            <input id="maleMetr" type="radio" name="genderMetr" value="male" required>
+            Male
+          </label>
+          
+          <label class="radio-option">
+            <input id="femaleMetr" type="radio" name="genderMetr" value="female" required>
+            Female
+          </label>
+        </div>        
+
+        <!--calc btns-->
+        <br>
+        <br>
+        <div class="end">
+          <button class="endbtn" type="Submit" onclick="calculateMetr(event)">Calculate</button>
+          <button class="endbtn" type="button" onclick="clearData(event)">Reset</button>
+        </div>
+      </form>
+      <p id="resultMetr"></p>
+      <!--end data-->
+      <br>
+      <br>
+      <div id="bars">
+        <div class="blue-bar" style="background-color:#1d8eff"></div>
+        <div class="green-bar" style="background-color:rgba(0, 128, 0, 0.8)"></div>
+        <div class="yellow-bar" style="background-color:goldenrod"></div>
+        <div class="red-bar" style="background-color:rgba(255, 0, 0, 0.842)"></div>
+      </div>
+
+      <div id="texts">
+        <div class="endtexts">
+          <h5>Underweight</h5>
+          <h6>Below 18.5</h6>
+        </div>
+        <div class="endtexts">
+          <h5>Healthy</h5>
+          <h6>18.5 -24.9</h6>
+        </div>
+        <div class="endtexts">
+          <h5>Overweight</h5>
+          <h6>25 - 29.9</h6>
+        </div>
+        <div class="endtexts">
+          <h5>Obese</h5>
+          <h6> 30 and Above</h6>
+        </div>
+      </div>
+    </div>
+    <!--end of tab content 2-->
+  </div>
+  <!--end of container-->
+
+  <script src="js/bmiCalc.js"></script>
+</body>
+</html>
+
+<!--future work- ai integration to conclude bmi - apis and backend knowledge--
