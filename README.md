@@ -16,7 +16,6 @@ After computing your BMI, the app sends the result to Gemini, which generates co
 - Real‑time validation and error handling.  
 - AI‑powered contextual feedback after BMI calculation.  
 - Reset functionality for quick re‑calculation.  
-- Clean modular code (HTML, CSS, JavaScript).  
 
 ---
 
@@ -24,5 +23,7 @@ After computing your BMI, the app sends the result to Gemini, which generates co
 - **Frontend:** HTML, CSS, JavaScript  
 - **Backend (optional):** Node.js + Express (for AI feedback route `/ai/feedback`)  
 - **AI Integration:** Google Gemini API  
-- **Deployment:** GitHub Pages (static) or Render/Netlify (with backend)  
+- **Deployment:** GitHub Pages (static) or Render/Netlify (with backend)
+
+  🚀 [Live Demo on Render](https://bmi-calculator-ul7e.onrender.com)
 
