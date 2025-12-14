@@ -25,5 +25,5 @@ After computing your BMI, the app sends the result to Gemini, which generates co
 - **AI Integration:** Google Gemini API  
 - **Deployment:** GitHub Pages (static) or Render/Netlify (with backend)
 
-  🚀 [Live Demo on Render](https://bmi-calculator-ul7e.onrender.com)
+🚀 [Live Demo on Render](https://bmi-calculator-ul7e.onrender.com)
 
