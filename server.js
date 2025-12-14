@@ -17,7 +17,7 @@ app.get("/bmiCalc",(req,res)=>
 
 app.post("/ai/feedback",async (req,res)=>{
 const promptText=req.body.text;
-const url =`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${process.env.API_KEY}`;
+const url =`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${process.env.API_KEY}`;
 const payload = {
   contents: [
     { parts: [{ text: promptText }] }
